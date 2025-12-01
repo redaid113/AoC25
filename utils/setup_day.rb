@@ -70,7 +70,7 @@ class SetupDay
 
   def download_input
     http = Net::HTTP.start('adventofcode.com', 443, use_ssl: true)
-    http.get("/2024/day/#{@day_num}/input", headers).body
+    http.get("/2025/day/#{@day_num}/input", headers).body
   end
 
   def headers
